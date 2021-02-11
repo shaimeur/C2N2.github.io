@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    width: 95%;
+    margin: auto;
+}
+
+
+@import "_header.scss" ;
+
+
+@import"_what.scss" ;
+
+@import"_about.scss" ;
+
+@import"_gallery.scss" ;
+ 
+@import"_contact.scss" ;
+
+

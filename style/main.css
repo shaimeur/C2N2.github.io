@@ -4,4 +4,39 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  width: 95%;
+  margin: auto;
+}
+
+.header {
+  background-color: black;
+  height: 200px;
+  width: 200px;
+}
+
+.what {
+  background-color: magenta;
+  height: 200px;
+  width: 200px;
+}
+
+.about {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+
+.gallery {
+  background-color: burlywood;
+  height: 200px;
+  width: 200px;
+}
+
+.contact {
+  background-color: #9c8888;
+  height: 200px;
+  width: 200px;
+}
 /*# sourceMappingURL=main.css.map */
