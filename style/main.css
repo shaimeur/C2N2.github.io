@@ -99,6 +99,29 @@ body {
   border: 0.0001px solid #898989;
 }
 
+.link {
+  width: 18%;
+  position: fixed;
+  top: 320px;
+  left: 97%;
+}
+
+.link ul li {
+  list-style: none;
+}
+
+.link ul li a {
+  padding: 0px 15px;
+  font-size: xx-large;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.link ul li a:hover {
+  background-color: #ffff;
+  border-radius: 50%;
+}
+
 .gallery {
   background-color: burlywood;
   width: 100%;
