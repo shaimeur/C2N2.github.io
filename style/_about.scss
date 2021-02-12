@@ -78,6 +78,7 @@
    }
 }
 //  styling links between sections
+
 .link{
     width: 18%;
     position: fixed;
@@ -86,16 +87,24 @@
     ul{
         li{
             list-style:none;
+            margin-top: 30px;
             a{
-                padding:  0px 15px;
-                font-size:xx-large;
-                color :#ffff;
-                text-decoration: none;
-                &:hover{
+                .a{
+                    width: 10px;
+                    height: 10px;
                     background-color: #ffff;
-                    border-radius: 50%
+                    border-radius: 50%;
+                }
+                .a:hover{
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ffff;
+                    border-radius: 50%;
+                    margin: -5px -5px -5px -5px;
                 }
             }
         }
     };
-}
+
+    }
+
