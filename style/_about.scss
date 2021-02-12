@@ -77,3 +77,25 @@
     }  
    }
 }
+// styling links between sections
+.link{
+    width: 18%;
+    position: fixed;
+    top: 320px;
+    left: 97%;
+    ul{
+        li{
+            list-style:none;
+            a{
+                padding:  0px 15px;
+                font-size:xx-large;
+                color :#ffff;
+                text-decoration: none;
+                &:hover{
+                    background-color: #ffff;
+                    border-radius: 50%
+                }
+            }
+        }
+    }
+}
