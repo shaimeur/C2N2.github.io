@@ -89,7 +89,6 @@ body {
 .what {
   background-color: #1a1a1a;
   width: 100%;
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,6 +96,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 120px 0px;
 }
 
 .what .what__title {
@@ -105,7 +105,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 50px 0 50px 0;
+  padding-bottom: 30px;
 }
 
 .what .what__content {
@@ -128,6 +128,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 400px;
+  padding-top: 20px;
 }
 
 .what .what__content .mobile .descript, .what .what__content .templates .descript, .what .what__content .design .descript {
@@ -240,14 +241,14 @@ img {
   margin-top: 30px;
 }
 
-.link ul li a .a {
+.link ul li a .link__a {
   width: 10px;
   height: 10px;
   background-color: #ffff;
   border-radius: 50%;
 }
 
-.link ul li a .a:hover {
+.link ul li a .link__a:hover {
   width: 20px;
   height: 20px;
   background-color: #ffff;
@@ -264,28 +265,32 @@ img {
 .contact {
   background-color: black;
   width: 100%;
-  height: 900px;
+  padding-top: 60px;
   color: #4e4e4e;
 }
 
 .contact .conctact__top {
-  height: 90%;
+  height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .contact .conctact__top .info {
-  height: 60%;
+  width: 650px;
+  height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,19 +307,27 @@ img {
   color: white;
 }
 
+.contact .conctact__top .info .liste__phone, .contact .conctact__top .info .liste__mail, .contact .conctact__top .info .list__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact .conctact__top .info .liste img {
+  margin-right: 10px;
   height: 60px;
   width: 60px;
 }
 
-.contact .conctact__top .info .liste img .liste__phone {
-  position: relative;
-  bottom: 50px;
-  left: 50px;
-}
-
 .contact .conctact__top .formulaire {
   height: 60%;
+  width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +341,8 @@ img {
 }
 
 .contact .conctact__top .formulaire .formulaire__name, .contact .conctact__top .formulaire .formulaire__email, .contact .conctact__top .formulaire .formulaire__msg, .contact .conctact__top .formulaire .formulaire__btn {
-  padding: 10px 100px;
+  margin-top: 20px;
+  padding: 10px 20px;
   background-color: black;
   color: white;
   border: 2px solid #878787;
@@ -342,7 +356,8 @@ img {
 }
 
 .contact .footer {
-  height: 10%;
+  margin-top: 20px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,8 +365,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -373,13 +389,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
