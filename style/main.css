@@ -13,12 +13,76 @@ body {
 .header {
   width: 100%;
   height: 900px;
-  background-image: url(../images/home-bg.jpg);
+  background-image: url("../images/home-bg.jpg");
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .header__title {
-  font-size: large;
+  font-size: 30px;
   color: white;
+}
+
+.header .header__logo {
+  margin-top: 40px;
+  height: 84px;
+  width: 250px;
+  color: #ca333a;
+  border: solid 2px #ca333a;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 44px;
+  font-family: sans-serif;
+}
+
+.header .header__main-title {
+  color: white;
+  margin-top: 50px;
+  opacity: 50%;
+  font-size: 32px;
+}
+
+.header .header__paragraph {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  text-align: center;
+  opacity: 60%;
+}
+
+.header .header__btn {
+  background: transparent;
+  width: 184px;
+  border: 10px;
+  color: #fcfcfc;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 22px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: solid 1px white;
+  margin-top: 70px;
+  border-radius: 4px;
+}
+
+.header .header__btn:hover {
+  background-color: #ca333a;
+  border: none;
+  cursor: pointer;
 }
 
 .what {
@@ -161,6 +225,33 @@ img {
   background-color: #fff;
   border-radius: 30px;
   border: 0.0001px solid #898989;
+}
+
+.link {
+  width: 18%;
+  position: fixed;
+  top: 320px;
+  left: 97%;
+}
+
+.link ul li {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.link ul li a .a {
+  width: 10px;
+  height: 10px;
+  background-color: #ffff;
+  border-radius: 50%;
+}
+
+.link ul li a .a:hover {
+  width: 20px;
+  height: 20px;
+  background-color: #ffff;
+  border-radius: 50%;
+  margin: -5px -5px -5px -5px;
 }
 
 .gallery {
