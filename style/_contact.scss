@@ -37,7 +37,7 @@
                         padding: 10px 100px;
                         background-color: black;
                         color: white;
-                        border-radius: 1px solid gray;
+                        border: 2px solid #878787;
                     }
                     .formulaire__email{
                         @extend .formulaire__name;
@@ -50,6 +50,7 @@
                         background-color: #d43f52;
                         color: white;
                         font-size: large;
+                        border: none;
                         @extend .formulaire__name;
                         }
             }

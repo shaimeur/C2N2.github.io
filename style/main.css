@@ -331,13 +331,14 @@ img {
   padding: 10px 100px;
   background-color: black;
   color: white;
-  border-radius: 1px solid gray;
+  border: 2px solid #878787;
 }
 
 .contact .conctact__top .formulaire .formulaire__btn {
   background-color: #d43f52;
   color: white;
   font-size: large;
+  border: none;
 }
 
 .contact .footer {
