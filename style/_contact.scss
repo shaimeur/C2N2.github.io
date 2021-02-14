@@ -88,9 +88,12 @@
                     background-color: #2a2a2a;
             }
          .social-icon {
-              display: flex;
+             width: 80px;
+             margin-top: 10px;
+             display: flex;
              justify-content: space-between;
              align-items: center;
+              list-style: none;
          }   
     }
 

@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -385,6 +386,8 @@ img {
 }
 
 .contact .footer .social-icon {
+  width: 80px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,5 +397,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */
