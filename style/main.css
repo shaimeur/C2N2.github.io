@@ -72,14 +72,14 @@ body {
     text-align: center;
     color: white; }
   .gallery .gallery__image {
-    width: 90%;
+    width: 70%;
     height: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1,5fr 2fr;
     grid-template-areas: "image1 image1 image2 image2 image3 image3" "image4 image4 image4 image5 image5 image5";
-    gap: 20px; }
+    gap: 40px; }
     .gallery .gallery__image .image1 {
       grid-area: image1;
       background-image: url(./images/portfolio-img1.jpg);
@@ -106,6 +106,35 @@ body {
       background-repeat: no-repeat;
       background-size: 100%; }
 
+@media (max-width: 700px) {
+  .gallery__image {
+    width: 30%;
+    height: 40%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr;
+    grid-template-areas: "image1 image2" "image3 image4 " "image5 "; }
+    .gallery__image .image1 {
+      grid-area: image1;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .gallery__image .image2 {
+      grid-area: image2;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .gallery__image .image3 {
+      grid-area: image3;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .gallery__image .image4 {
+      grid-area: image4;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .gallery__image .image5 {
+      grid-area: image5;
+      background-repeat: no-repeat;
+      background-size: 100%; } }
 .contact {
   background-color: #9c8888;
   width: 100%;
