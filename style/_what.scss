@@ -1,5 +1,60 @@
 .what {
-    background-color: magenta;
+    background-color:#1a1a1a;
     width: 100%;
-   height: 700px;
+    // height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0px;
+
+        .what__title {
+        font-size: 30px;
+        color: #f1f1f1;
+        align-self: center;
+       
+        padding-bottom: 30px;
+        }
+    
+     .what__content {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         color: #fafafa;
+         
+
+        .mobile {
+            display: flex;
+            width: 400px;
+            padding-top:20px;
+                .descript {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 40px;
+                    .descript__title {
+                        padding-bottom: 15px;
+                        .descript__paragh {
+                            color: #525252;
+                            font-size: large;
+                        }
+                    }
+                   
+                }
+        }
+
+            .templates {
+                @extend .mobile ; }
+
+                .design {
+                    @extend .mobile ;}    
+
+     }   
+
+
+}
+
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
 }
