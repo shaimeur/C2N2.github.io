@@ -18,23 +18,24 @@
          display: flex;
          flex-direction: row;
          justify-content: space-around;
-         flex-wrap: wrap;
          color: #fafafa;
          
 
         .mobile {
             display: flex;
-            width: 400px;
+            width: 450px;
             padding-top:20px;
                 .descript {
+                    width: 55%;
                     display: flex;
                     flex-direction: column;
-                    padding-left: 40px;
+                    margin-left: 40px;
                     .descript__title {
                         padding-bottom: 15px;
                         .descript__paragh {
                             color: #525252;
                             font-size: large;
+                           
                         }
                     }
                    
@@ -45,7 +46,16 @@
                 @extend .mobile ; }
 
                 .design {
-                    @extend .mobile ;}    
+                    @extend .mobile ;} 
+                    @media only screen and (max-width:750px) {
+                    
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                       
+                     
+                        
+                    }  
 
      }   
 
@@ -53,7 +63,7 @@
 }
 
 
-img {
+.img {
     width: 80px;
     height: 80px;
     border-radius: 100%;
