@@ -1,0 +1,110 @@
+
+.about {
+    // stayling the parent container
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 100px 0px;
+    font-family:Arial, Helvetica, sans-serif ;
+    // styling about me text
+   .me{
+       width:700px;
+       padding: 20px;
+    .me__title{
+        padding-bottom: 20px;
+    }   
+   .me__subtitle{
+       margin-top: 20px;
+       color: #b53546;
+   }
+   .me__paragraph1{
+    margin-top: 20px;
+    color: #898989;
+    font-size: large;  
+   }
+   .me__paragraph2{
+    @extend .me__paragraph1; 
+   }
+   }
+    .progress{
+        width: 700px;
+        padding: 20px;
+    //  styling the text above the bar   
+   .progress__web{
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 5px;
+   }
+   .progress__mobile{
+   @extend .progress__web;
+    }
+    .progress__seo{
+    @extend .progress__web;
+    }
+    .progress__html{
+    @extend .progress__web;
+    }
+
+//  styling the progress bar
+
+   .progress__95[value]{
+    -webkit-appearance: none;
+    margin-bottom: 20px;
+    width: 100%; 
+    height: 7px;
+    &::-webkit-progress-value {
+        background-color: #b53546;
+        border-radius: 30px;
+      }
+    &::-webkit-progress-bar {
+        background-color: #fff;
+        border-radius: 30px;
+        border: 0.0001px solid #898989;
+      }
+   }
+   .progress__80{
+       @extend .progress__95[value];
+   }
+   .progress__70{
+    @extend .progress__95[value];
+    } 
+    .progress__90{
+    @extend .progress__95[value];
+    }  
+   }
+}
+//  styling links between sections
+
+.link{
+    width: 18%;
+    position: fixed;
+    top: 320px;
+    left: 97%;
+    ul{
+        li{
+            list-style:none;
+            margin-top: 30px;
+            a{
+                .link__a{
+                    width: 10px;
+                    height: 10px;
+                    background-color: #ffff;
+                    border-radius: 50%;
+                }
+                .link__a:hover{
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ffff;
+                    border-radius: 50%;
+                    margin: -5px -5px -5px -5px;
+                }
+            }
+        }
+    };
+
+    }
+
